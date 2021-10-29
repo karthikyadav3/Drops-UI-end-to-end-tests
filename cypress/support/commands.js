@@ -30,5 +30,6 @@
  */
 Cypress.Commands.add('SelectLanguage', (language) => {
     cy.wait(Cypress.env('medium_timeout'))
+    //cy.get(`[data-testid=${language}]`).click()
     cy.get('.r-jwli3a').contains(language).click()
 })
