@@ -18,21 +18,9 @@ For installing Cypress and its dependencies run the following commands
 npm install cypress
 
 ```
-``` 
-npm i -D cypress-wait-until
-
-```
-``` 
-npm install adm-zip
-
-```
 
 To open the Cypress Test Runner, run the following command. You can then choose which test to launch in the windows that opens up.
 
- `` npm run cypress:open ``
- 
- To run the tests in headless mode, run the following command. You can specify which test to launch with the  `` --spec `` flag.
- 
-  `` npm run cypress:run --spec cypress/<file name>``
+ `` npx cypress open ``
  
  # Details of the tests
