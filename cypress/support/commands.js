@@ -23,3 +23,12 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+/**
+ *Select the Language.
+ * @param {String} language
+ */
+Cypress.Commands.add('SelectLanguage', (language) => {
+    cy.wait(Cypress.env('medium_timeout'))
+    cy.get('.r-jwli3a').contains(language).click()
+})
