@@ -1,0 +1,22 @@
+{
+  "name": "drops-ui-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karthikyadav3/Drops-UI-end-to-end-tests.git"
+  },
+  "author": "Karthik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karthikyadav3/Drops-UI-end-to-end-tests/issues"
+  },
+  "homepage": "https://github.com/karthikyadav3/Drops-UI-end-to-end-tests#readme",
+  "devDependencies": {
+    "cypress": "^8.7.0"
+  }
+}
