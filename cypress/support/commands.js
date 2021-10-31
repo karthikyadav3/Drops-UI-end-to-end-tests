@@ -28,7 +28,23 @@
  *Select the Language.
  * @param {String} language
  */
-Cypress.Commands.add('SelectLanguage', (language) => {
+ Cypress.Commands.add('SelectLanguage', (language) => {
     cy.wait(Cypress.env('short_timeout'))
     cy.get(`[data-testid=${language}]`).click()
-})
+  })
+  
+  /*
+   *helper function:login - for login into Web Application
+   *----------------------------------------------------------
+   *param email : email
+   *param password : password
+   */
+  Cypress.Commands.add('login', (email, password) => {
+    cy.visit('/')
+    cy.get('[data-testid="EmailButton"]').click()
+    cy.get('[data-testid="EmaiSignup_Login"]').click()
+    cy.get('[data-testid="EmaiSignup_Email"]').clear().type(email)
+    cy.get('[data-testid="EmaiSignup_Password"]').clear().type(password, { log: false })
+    cy.get('[data-testid="EmaiSignup_Submit"]').click()
+  })
+  
