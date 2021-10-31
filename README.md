@@ -33,3 +33,7 @@ To open the Cypress Test Runner, run the following command. You can then choose 
  
  
  # Details of the tests
+
+ | File name | Detail |
+| --------- | ------ |
+| ``test_languages.js`` | Check the list of languages and test if all languages are visible, Select the particular language and redirects and tests the redirected page.|
