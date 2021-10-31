@@ -1,18 +1,21 @@
 {
-    "baseUrl": "https://app.languagedrops.com/",
-    "integrationFolder": "cypress",
-    "downloadsFolder": "cypress/downloads",
-    "numTestsKeptInMemory": 5,
-    "video" : false,
-    "defaultCommandTimeout": 50000,
-    "pageLoadTimeout": 60000,
-    "retries": {
-          "runMode": 2
-          },    
-     "env" : {
-          "short_timeout":1000,
-          "medium_timeout":5000,
-          "long_timeout":50000,
-          "extra_long_timeout":3000000
-     }
-}
+     "baseUrl": "https://app.languagedrops.com",
+     "integrationFolder": "cypress",
+     "downloadsFolder": "cypress/downloads",
+     "numTestsKeptInMemory": 5,
+     "video" : false,
+     "defaultCommandTimeout": 50000,
+     "pageLoadTimeout": 60000,
+     "retries": {
+           "runMode": 2
+           },    
+      "env" : {
+           "short_timeout":1000,
+           "medium_timeout":5000,
+           "long_timeout":50000,
+           "extra_long_timeout":3000000,
+           "USERNAME":"kingkarthik139@gmail.com",
+           "PASSWORD":"User@123"
+      }
+ }
+ 
